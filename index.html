@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="components">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="Vendor/components-font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="Vendor/bootstrap/dist/css/bootstrap.css"/>
+
+    <title></title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row" ng-controller="mainCtrl">
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <div class="panel-title">Activity feed</div>
+                </div>
+                <!-- START list group-->
+                <div class="list-group">
+                    <!-- START list group item-->
+                    <div class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                       <span class="fa-stack fa-lg">
+                                          <em class="fa fa-circle fa-stack-2x text-green"></em>
+                                          <em class="fa fa-cloud-upload fa-stack-1x fa-inverse text-white"></em>
+                                       </span>
+                            </div>
+                            <div class="media-body clearfix">
+                                <div class="media-heading text-green m0">NEW UPLOAD</div>
+                                <p class="m0">
+                                    <small>New file <a href="javascript:void(0);">entities.xls </a>uploaded to the cloud</small>
+
+                                    <div class="btn-group" fixed-dropdown uib-dropdown is-open="status.isopen">
+                                        <button type="button" class="btn btn-primary" uib-dropdown-toggle>
+                                            Button dropdown <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu" uib-dropdown-menu aria-labelledby="single-button">
+                                            <li role="menuitem"><a href="#">Action</a></li>
+                                            <li role="menuitem"><a href="#">Another action</a></li>
+                                            <li role="menuitem"><a href="#">Something else here</a></li>
+                                            <li class="divider"></li>
+                                            <li role="menuitem"><a href="#">Separated link</a></li>
+                                        </ul>
+                                    </div>
+
+
+                                </p>
+                                <small>5 minutes ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END list group item-->
+                    <!-- START list group item-->
+                    <div class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                       <span class="fa-stack fa-lg">
+                                          <em class="fa fa-circle fa-stack-2x text-info"></em>
+                                          <em class="fa fa-file-text-o fa-stack-1x fa-inverse text-white"></em>
+                                       </span>
+                            </div>
+                            <div class="media-body clearfix">
+                                <div class="media-heading text-info m0">NEW DOCUMENT</div>
+                                <p class="m0">
+                                    <small>New document <a href="javascript:void(0);">Lorem ipsum </a>created</small>
+                                </p>
+                                <small>1 hour ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END list group item-->
+                    <!-- START list group item-->
+                    <div class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                       <span class="fa-stack fa-lg">
+                                          <em class="fa fa-circle fa-stack-2x text-danger"></em>
+                                          <em class="fa fa-exclamation fa-stack-1x fa-inverse text-white"></em>
+                                       </span>
+                            </div>
+                            <div class="media-body clearfix">
+                                <div class="media-heading text-danger m0">IMPORTANT MESSAGE</div>
+                                <p class="m0">
+                                    <small>Sammy Sam sent you an important messsage. <a href="javascript:void(0);">Read now</a>
+                                    </small>
+                                </p>
+                                <small>3 hours ago</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END list group item-->
+                    <!-- START list group item-->
+                    <div class="list-group-item">
+                        <div class="media">
+                            <div class="pull-left">
+                                       <span class="fa-stack fa-lg">
+                                          <em class="fa fa-circle fa-stack-2x text-warning"></em>
+                                          <em class="fa fa-clock-o fa-stack-1x fa-inverse text-white"></em>
+                                       </span>
+                            </div>
+                            <div class="media-body clearfix">
+                                <div class="media-heading text-warning m0">MEETING</div>
+                                <p class="m0">
+                                    <small>Rich Reynods added a new meeting. <a href="javascript:void(0);" class="label label-info">JOIN</a>
+                                    </small>
+                                </p>
+                                <small>yesterday</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END list group item-->
+                </div>
+                <!-- END list group-->
+                <!-- START panel footer-->
+                <div class="panel-footer clearfix">
+                    <a href="javascript:void(0);" class="pull-left">
+                        <small>Load more</small>
+                    </a>
+                </div>
+                <!-- END panel-footer-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript" src="Vendor/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="Vendor/lodash/lodash.js"></script>
+<script type="text/javascript" src="Vendor/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="Vendor/angular/angular.js"></script>
+<script type="text/javascript" src="Vendor/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+<script type="text/javascript" src="module.js"></script>
+<script type="text/javascript" src="fixedDropdown.js"></script>
+</body>
+</html>
